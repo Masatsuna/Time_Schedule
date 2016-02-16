@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="編集"
+            android:id="@+id/KA_button"
+            android:layout_row="0"
+            android:layout_column="7"
+            android:onClick="jump" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1日"
+            android:id="@+id/KA_textView"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:singleLine="false"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="2日"
+            android:id="@+id/KA_textView2"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="3日"
+            android:id="@+id/KA_textView4"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="4日"
+            android:id="@+id/KA_textView5"
+            android:layout_row="1"
+            android:layout_column="5"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="5日"
+            android:id="@+id/KA_textView6"
+            android:layout_row="1"
+            android:layout_column="6"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/KA_textView7"
+            android:layout_row="1"
+            android:layout_column="7"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1限"
+            android:id="@+id/KA_textView3"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textSize="32dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button2"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:onClick="set"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button3"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button4"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button5"
+            android:layout_row="2"
+            android:layout_column="5"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button6"
+            android:layout_row="2"
+            android:layout_column="6"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button7"
+            android:layout_row="2"
+            android:layout_column="7"
+            android:nestedScrollingEnabled="false"
+            android:onClick="set" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="2限"
+            android:id="@+id/KA_textView8"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:textSize="32dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button8"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button9"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button10"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button11"
+            android:layout_row="3"
+            android:layout_column="5"
+            android:nestedScrollingEnabled="false"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button12"
+            android:layout_row="3"
+            android:layout_column="6"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button13"
+            android:layout_row="3"
+            android:layout_column="7"
+            android:onClick="set" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="3限"
+            android:id="@+id/KA_textView9"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:textSize="32dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button14"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button15"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:nestedScrollingEnabled="false"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button16"
+            android:layout_row="4"
+            android:layout_column="4"
+            android:onClick="set"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button17"
+            android:layout_row="4"
+            android:layout_column="5"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button18"
+            android:layout_row="4"
+            android:layout_column="6"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button19"
+            android:layout_row="4"
+            android:layout_column="7"
+            android:onClick="set" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="4限"
+            android:id="@+id/KA_textView10"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:textSize="32dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button20"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button21"
+            android:layout_row="5"
+            android:layout_column="3"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button22"
+            android:layout_row="5"
+            android:layout_column="4"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button23"
+            android:layout_row="5"
+            android:layout_column="5"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button24"
+            android:layout_row="5"
+            android:layout_column="6"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button25"
+            android:layout_row="5"
+            android:layout_column="7"
+            android:onClick="set" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="5限"
+            android:id="@+id/KA_textView11"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:textIsSelectable="false"
+            android:textSize="32dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button26"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button27"
+            android:layout_row="6"
+            android:layout_column="3"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button28"
+            android:layout_row="6"
+            android:layout_column="4"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button29"
+            android:layout_row="6"
+            android:layout_column="5"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button30"
+            android:layout_row="6"
+            android:layout_column="6"
+            android:onClick="set" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KA_button31"
+            android:layout_row="6"
+            android:layout_column="7"
+            android:onClick="set" />
+
+
+    </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="予定"
+            android:id="@+id/KA_textView16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="内容"
+            android:id="@+id/KA_textView17" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="メモ"
+            android:id="@+id/KA_textView12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="内容"
+            android:id="@+id/KA_textView13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="食事内容"
+            android:id="@+id/KA_textView14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/KA_textView15"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="91dp"
+            android:text="内容" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
